@@ -8,7 +8,7 @@ import {ACTION_TYPES} from "./postActionTypes";
 // ii. When you have a complex state, and you need to update every single item inside it
 
 
-const Post =  ()=> {
+const App =  ()=> {
     //USING STATE
     // const [loading,setLoading] = useState(false)
     // const [post,setPost] = useState({})
@@ -67,4 +67,4 @@ const Post =  ()=> {
     )
 }
 
-export default Post
+export default App
