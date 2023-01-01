@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Context from "./components/Context";
-import Ref from "./components/Ref";
+import UseContext from "./components/useContext";
+import UseRef from "./components/useRef";
 import reportWebVitals from './reportWebVitals';
-import Post from "./components/Post";
+import App from "./components/useTransition";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Post/>
+      <App/>
   </React.StrictMode>
 );
 

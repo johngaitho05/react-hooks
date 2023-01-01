@@ -2,7 +2,7 @@ import React, {useContext, useState} from "react";
 
 const ThemeContext = React.createContext()
 
-function Context() {
+function UseContext() {
     const [theme, setTheme] = useState('dark')
 
     return (
@@ -28,4 +28,4 @@ function GrandChildComponent(){
     )
 }
 
-export default Context;
+export default UseContext;

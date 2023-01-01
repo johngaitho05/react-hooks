@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from "react";
 
-function Ref(){
+function UseRef(){
     const renderCount = useRef(0)
 
     useEffect(()=>{
@@ -11,4 +11,4 @@ function Ref(){
 
 
 
-export default Ref
+export default UseRef
