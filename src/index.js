@@ -4,7 +4,8 @@ import './index.css';
 import UseContext from "./components/useContext";
 import UseRef from "./components/useRef";
 import reportWebVitals from './reportWebVitals';
-import App from "./components/useTransition";
+//Change the path to test other hooks
+import App from "./components/useEffect";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
