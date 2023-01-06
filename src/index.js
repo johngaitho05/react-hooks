@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import UseContext from "./components/useContext";
-import UseRef from "./components/useRef";
 import reportWebVitals from './reportWebVitals';
 //Change the path to test other hooks
-import App from "./components/useEffect";
+import App from "./components/useContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

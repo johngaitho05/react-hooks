@@ -1,30 +1,34 @@
-import React, {useContext, useState} from "react";
+import React from "react";
+import {userContext} from "./userContext";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Home from "../pages";
+import About from "../pages/about";
 
-const ThemeContext = React.createContext()
+// useContext
+// Used to pass common props down the components hierarchy
+// E.g. passing the value of the currently logged-in user to every page
+
 
 function App() {
-    const [theme, setTheme] = useState('dark')
-
     return (
-        <ThemeContext.Provider value={{theme, setTheme}}>
-            <ChildComponent/>
-        </ThemeContext.Provider>)
-}
+        <div>
+            <userContext.Provider value="john">
+                <Router>
 
-function ChildComponent(){
-    return <GrandChildComponent/>
-}
+                    <nav>
+                        <ul>
+                            <li><Link to='/'>Home</Link></li>
+                            <li><Link to='/about/'>About</Link></li>
+                        </ul>
+                    </nav>
 
-function GrandChildComponent(){
-    const {theme, setTheme} = useContext(ThemeContext)
-
-    return (
-        <>
-            <div>Theme is {theme}</div>
-            <button onClick={()=> setTheme('light')}>
-                Change to light theme
-            </button>
-        </>
+                    <Routes>
+                        <Route path='/' element={<Home/>}/>
+                        <Route path='/about' element={<About/>}/>
+                    </Routes>
+                </Router>
+            </userContext.Provider>
+        </div>
     )
 }
 
