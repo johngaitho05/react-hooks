@@ -1,6 +1,6 @@
 import React, {useState,useReducer} from "react";
-import {INITIAL_STATE, postReducer} from "./postReducer";
-import {ACTION_TYPES} from "./postActionTypes";
+import {INITIAL_STATE, postReducer} from "./helpers/postReducer";
+import {ACTION_TYPES} from "./helpers/postActionTypes";
 
 
 //When to use useReducer
