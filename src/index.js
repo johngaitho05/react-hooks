@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 //Change the path to test other hooks
-import App from "./components/custom/useTimeOut";
+import App from "./components/custom/useDebounce";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
